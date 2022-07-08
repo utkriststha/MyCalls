@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_bar_graph_cr.xml" value="0.1875" />
+        <entry key="app/src/main/res/layout/activity_call_analysis.xml" value="0.32643166186401523" />
+        <entry key="app/src/main/res/layout/activity_call_log.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_call_report.xml" value="0.1875" />
+        <entry key="app/src/main/res/layout/activity_info.xml" value="0.1361111111111111" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.19758507135016465" />
+        <entry key="app/src/main/res/layout/activity_pc_call_duration.xml" value="0.125" />
+        <entry key="app/src/main/res/layout/activity_pc_no_of_calls.xml" value="0.1361111111111111" />
+        <entry key="app/src/main/res/layout/activity_pie_chart_cr.xml" value="0.3075313807531381" />
+        <entry key="app/src/main/res/layout/one_line_call_log.xml" value="0.25" />
+        <entry key="app/src/main/res/menu/sort_menu.xml" value="0.335" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.11614583333333334" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.11614583333333334" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="3dp"
+    tools:context=".CallLog">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/AbstractLight"
+        android:text="Call Log"
+        android:textColor="@color/white"
+        android:textSize="39sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/menuBotNavBar"
+        android:background="@color/BackgroudLight" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="2dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/lvCallLog"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content" />
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/menuBotNavBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-2dp"
+        android:background="@color/BackgroudLight"
+        android:fadingEdge="vertical"
+        android:keepScreenOn="true"
+        android:layerType="none"
+        android:padding="4dp"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@color/black"
+        app:itemRippleColor="@color/Abstract"
+        app:itemTextAppearance="@style/menu_text_style"
+        app:itemTextColor="@color/black"
+        app:menu="@menu/sort_menu" />
+
+
+</RelativeLayout>

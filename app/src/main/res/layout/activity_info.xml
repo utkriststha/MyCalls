@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Info">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/AbstractLight"
+            android:text="About MyCalls"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="39sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:padding="15dp"
+            android:text=" MyCalls is an android application that helps in simplifying phone record analysis, which lets users have detailed and visualized versions of the call record, making examining the call history super simple and effortless. This application provides everything that the user needs related to the phone call response behaviours.\n
+The application consists of 3 fragments:\n\n\n
+•	Call Log: It consists of all the call history that happened on the phone showing the name of the caller, day and time of call, and duration of the call. Also, the tab bar is attached below to separate all calls, incoming, outgoing, missed and declined calls.
+\n\n
+•	Call Analysis: It displays all the analysis that is made from the phone history and record. The feature includes:\n\n
+o	Total calls\n
+o	Incoming calls\n
+o	Outgoing calls\n
+o	Missed calls\n
+o	Highest caller\n
+o	Longest call\n
+o	Average call duration per call\n
+o	Total number of calls from an unknown number\n\n
+
+
+•	Call Report: In this fragment, a report with a diagram is shown where the user can see pie char for call duration and number of calls.
+"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+</ScrollView>

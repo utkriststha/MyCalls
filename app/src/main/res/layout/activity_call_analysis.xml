@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".CallAnalysis">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/AbstractLight"
+        android:text="Call Analysis"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="39sp" />
+
+    //Total Calls
+
+    <LinearLayout
+            android:id="@+id/lytTotalCalls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@color/honeyDew"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+        <TextView
+            android:id="@+id/totalCalls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Total Calls"
+            android:textColor="@color/black"
+            android:textSize="34sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvResultTotalCallNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:gravity="center_vertical"
+                android:shadowColor="@color/black"
+                android:text="null"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:id="@+id/tvResultTotalCallTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:gravity="center_vertical|end"
+                android:text="null"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    //Incoming Calls
+    <LinearLayout
+        android:id="@+id/lytIncomingCalls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="@color/honeyDew"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/incomingCalls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Incoming Calls"
+            android:textColor="@color/black"
+            android:textSize="34sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvResultIncomingCallNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:gravity="center_vertical|end"
+                android:shadowColor="@color/black"
+                android:text="null"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:id="@+id/tvResultIncomingCallTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:gravity="center_vertical|end"
+                android:text="null"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    //Outgoing Calls
+    <LinearLayout
+        android:id="@+id/lytOutgoingCalls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="@color/honeyDew"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/outgoingCalls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Outgoing Calls"
+            android:textColor="@color/black"
+            android:textSize="34sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvResultOutgoingCallNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:gravity="center_vertical|end"
+                android:shadowColor="@color/black"
+                android:text="null"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:id="@+id/tvResultOutgoingCallTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:gravity="center_vertical|end"
+                android:text="null"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    //Missed
+
+    <LinearLayout
+        android:id="@+id/lytMissedCalls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="@color/honeyDew"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/missedCalls"
+            android:layout_width="274dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Missed Calls"
+            android:textColor="@color/black"
+            android:textSize="34sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvResultMissedCallNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:gravity="center_vertical|end"
+                android:shadowColor="@color/black"
+                android:text="null"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:ignore="RtlCompat" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lytHighestCaller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="@color/honeyDew"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/highestCaller"
+            android:layout_width="117dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Highest Caller"
+            android:textColor="@color/black"
+            android:textSize="34sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvResultHighestCallerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:gravity="center_vertical|end"
+                android:shadowColor="@color/black"
+                android:text="null"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:id="@+id/tvResultHighestCallNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:gravity="center_vertical|end"
+                android:text="null"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lytLongestCaller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="@color/honeyDew"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/longestCaller"
+            android:layout_width="117dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Longest Caller"
+            android:textColor="@color/black"
+            android:textSize="34sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvResultLongestCallerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:gravity="center_vertical|end"
+                android:shadowColor="@color/black"
+                android:text="null"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:id="@+id/tvResultLongestCallDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:gravity="center_vertical|end"
+                android:text="null"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lytAverageCall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="@color/honeyDew"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/averageCall"
+            android:layout_width="117dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Average Call Duration"
+            android:textColor="@color/black"
+            android:textSize="34sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvResultAverageCall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:gravity="center_vertical|end"
+                android:shadowColor="@color/black"
+                android:text="null"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:ignore="RtlCompat" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lytUnknownCall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="@color/honeyDew"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/unknownCalls"
+            android:layout_width="259dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Unknown Calls"
+            android:textColor="@color/black"
+            android:textSize="34sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvResultUnknownCalls"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:gravity="center_vertical|end"
+                android:shadowColor="@color/black"
+                android:text="null"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:ignore="RtlCompat" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

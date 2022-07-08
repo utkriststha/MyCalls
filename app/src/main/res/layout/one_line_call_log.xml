@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="@color/honeyDew"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="251dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvCallType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Call Type"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tvContactName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contact Name"
+                android:textColor="@android:color/black"
+                android:textSize="34sp" />
+
+            <TextView
+                android:id="@+id/tvPhNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0444222333"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|end"
+            android:layout_weight="1"
+            android:gravity="center_vertical|end"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:layout_margin="3dp"
+                android:gravity="center_vertical|end"
+                android:shadowColor="@color/black"
+                android:text="null"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:layout_margin="3dp"
+                android:gravity="center_vertical|end"
+                android:text="null"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tvDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:layout_margin="3dp"
+                android:gravity="center_vertical|end"
+                android:text="null"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_margin="3dp"
+        android:background="?android:attr/listDivider" />
+
+</LinearLayout>

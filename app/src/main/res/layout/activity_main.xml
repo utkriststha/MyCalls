@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BackgroudLight"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/BackgroudLight"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginTop="40dp"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="Welcome to MyCalls"
+            android:textColor="@color/black"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnCallLog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="25dp"
+            android:height="140dp"
+            android:text="Call Log"
+            android:textColor="@color/white"
+            android:textColorLink="@color/Abstract"
+            android:textSize="38sp"
+            app:cornerRadius="20dp" />
+
+        <Button
+            android:id="@+id/btnCallAnalysis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="25dp"
+            android:height="140dp"
+            android:text="Call Analysis"
+            android:textColor="@color/white"
+            android:textColorLink="@color/Abstract"
+            android:textSize="38sp"
+            app:cornerRadius="20dp" />
+
+        <Button
+            android:id="@+id/btnCallReport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="25dp"
+            android:height="140dp"
+            android:text="Call Report"
+            android:textColor="@color/white"
+            android:textColorLink="@color/Abstract"
+            android:textSize="38sp"
+            app:cornerRadius="20dp" />
+
+        <ImageView
+            android:id="@+id/ivInfo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|right|end"
+            android:layout_marginTop="30dp"
+            android:clickable="true"
+            android:padding="10dp"
+            app:srcCompat="@drawable/info_symbol_in_circle"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="3dp"
+    tools:context=".CallReport">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/AbstractLight"
+        android:text="Call Report"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="39sp" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <Button
+        android:id="@+id/btnCallDuration"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="30dp"
+        android:padding="10dp"
+        android:text="Call Duration"
+        android:textSize="34sp"
+        app:cornerRadius="20dp" />
+
+    <Button
+        android:id="@+id/btnNoOfcalls"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="30dp"
+        android:padding="10dp"
+        android:text="No. of Calls"
+        android:textSize="34sp"
+        app:cornerRadius="20dp" />
+</LinearLayout>
+
+</LinearLayout>
